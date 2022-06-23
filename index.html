@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket_Form</title>
+</head>
+
+<body>
+    <style>
+        label {
+            width: 100%
+        }
+    </style>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <div>
+            <h2>Для публикации вашей статьи заполните, пожалуйста, следующую форму</h2>
+        </div>
+
+        <label for="name">
+            Название статьи
+            <input id="name">
+        </label>
+
+        <div>
+            <label>Рубрика:
+                <select>
+                    <option>программирование</option>
+                    <option>финансы</option>
+                    <option>строительство</option>
+                    <option>ремонт авто</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label class="labelanswer">Публикация:</label>
+
+            <input type="radio" checked name="answer" value=1>на сайте
+            <input type="radio" name="answer" value=2>в журнале
+            <input type="radio" name="answer" value=3>на сайте и в журнале
+
+        </div>
+        <div>
+            <label class="labelcomment">Разрешить комментарии:
+                <input checked type="checkbox" name="comment" value="yes">
+            </label>
+        </div>
+        <div>
+
+            <label class="labelanswertext">Текст статьи:</label><br>
+            <textarea name="answertext"></textarea>
+
+
+        </div>
+        <div class="button">
+            <button type="submit">Опубликовать</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

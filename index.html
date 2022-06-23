@@ -10,55 +10,114 @@
 
 <body>
     <style>
-        label {
-            width: 100%
+        * {
+            box-sizing: border-box;
+        }
+
+        .form {
+            margin: 0 auto;
+            padding: 20px 40px;
+            max-width: 1240px;
+            width: 100%;
+        }
+
+        .form__label {
+            margin-right: 10px;
+            display: inline-block;
+            width: 20%;
+        }
+
+        .form__input_with-max {
+            width: calc(100% - 20% - 20px);
+        }
+
+        .form__input-wrapper {
+            margin-bottom: 10px;
+        }
+
+        .form__input_textarea {
+            width: 100%;
+        }
+
+
+        @media (max-width: 768px) {
+            .form__label {
+                width: 100%;
+            }
+
+            .form__input_with-max {
+                width: 100%;
+            }
+
+            .form__label-checkbox {
+                display: block;
+            }
+
+            .form__select {
+                width: 100%;
+            }
+
+            .form__label_inline {
+                display: inline;
+            }
         }
     </style>
 
-    <form action="http://fe.it-academy.by/TestForm.php" method="get">
-        <div>
-            <h2>Для публикации вашей статьи заполните, пожалуйста, следующую форму</h2>
+    <form class="form" action="http://fe.it-academy.by/TestForm.php" method="get">
+
+        <h2 class="form__title">Для публикации вашей статьи заполните, пожалуйста, следующую форму</h2>
+
+        <div class="form__input-wrapper">
+            <label class="form__label" for="name">Название статьи</label>
+            <input class="form__input form__input_with-max" id="name">
         </div>
 
-        <label for="name">
-            Название статьи
-            <input id="name">
-        </label>
+        <div class="form__input-wrapper">
+            <label class="form__label" for="choose">Рубрика:</label>
+            <select class="form__select" id="choose">
+                <option>программирование</option>
+                <option>финансы</option>
+                <option>строительство</option>
+                <option>ремонт авто</option>
+            </select>
 
-        <div>
-            <label>Рубрика:
-                <select>
-                    <option>программирование</option>
-                    <option>финансы</option>
-                    <option>строительство</option>
-                    <option>ремонт авто</option>
-                </select>
+        </div>
+
+        <div class="form__input-wrapper">
+            <label class="form__label" for="radio">Публикация:</label>
+            <label class="form__label-checkbox">
+                <input class="form__input" id="radio" type="radio" checked name="answersite"
+                    value=1>на
+                сайте
             </label>
-        </div>
-
-        <div>
-            <label class="labelanswer">Публикация:</label>
-
-            <input type="radio" checked name="answer" value=1>на сайте
-            <input type="radio" name="answer" value=2>в журнале
-            <input type="radio" name="answer" value=3>на сайте и в журнале
-
-        </div>
-        <div>
-            <label class="labelcomment">Разрешить комментарии:
-                <input checked type="checkbox" name="comment" value="yes">
+            <label class="form__label-checkbox">
+                <input class="form__input" id="radio" type="radio" name="answermagazine" value=2>в
+                журнале
             </label>
-        </div>
-        <div>
+            <label class="form__label-checkbox">
+                <input class="form__input" id="radio" type="radio" name="answerboth" value=3>на
+                сайте и
+                в журнале
+            </label>
 
-            <label class="labelanswertext">Текст статьи:</label><br>
-            <textarea name="answertext"></textarea>
-
-
         </div>
-        <div class="button">
-            <button type="submit">Опубликовать</button>
+
+        <div class="form__input-wrapper">
+            <label class="form__label form__label_inline" for="comment">Разрешить комментарии: </label>
+            <input class="form__input" id="comment" type="checkbox" name="comment" value="yes">
         </div>
+
+        <div class="form__input-wrapper">
+            <label class="form__label" for="answer">Текст статьи: </label>
+            <br>
+            <textarea class="form__input form__input_textarea" id="answer" name="answertext">
+            </textarea>
+        </div>
+
+        <button class="form__button" type="submit">
+            Опубликовать
+        </button>
+
 
     </form>
 </body>

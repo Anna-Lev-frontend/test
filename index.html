@@ -16,33 +16,46 @@
 
         .form {
             margin: 0 auto;
-            padding: 20px 40px;
-            max-width: 1240px;
+
+            max-width: 100%;
             width: 100%;
         }
 
         .form__label {
-            margin-right: 10px;
-            display: inline-block;
-            width: 20%;
+            width: 200px;
+            float: left;
+
         }
 
+        .form__input {
+            margin-left: 200px
+        }
+
+
         .form__input_with-max {
-            width: calc(100% - 20% - 20px);
+            width: 100%
         }
 
         .form__input-wrapper {
             margin-bottom: 10px;
+
         }
 
         .form__input_textarea {
             width: 100%;
+
         }
 
 
         @media (max-width: 768px) {
             .form__label {
                 width: 100%;
+                float: left;
+                width: 200px;
+            }
+
+            .form__input {
+                margin-left: 0
             }
 
             .form__input_with-max {
@@ -60,6 +73,11 @@
             .form__label_inline {
                 display: inline;
             }
+
+            .form__input_radio {
+                float: left;
+                width: 100%;
+            }
         }
     </style>
 
@@ -69,7 +87,8 @@
 
         <div class="form__input-wrapper">
             <label class="form__label" for="name">Название статьи</label>
-            <input class="form__input form__input_with-max" id="name">
+
+            <div class="form__input"><input class="form__input_with-max" id="name"></div>
         </div>
 
         <div class="form__input-wrapper">
@@ -85,32 +104,33 @@
 
         <div class="form__input-wrapper">
             <label class="form__label" for="radio">Публикация:</label>
-            <label class="form__label-checkbox">
-                <input class="form__input" id="radio" type="radio" checked name="answersite"
-                    value=1>на
+            <label class="form__input_radio">
+
+                <input id="radio" type="radio" checked name="answersite" value=1>на
                 сайте
             </label>
-            <label class="form__label-checkbox">
-                <input class="form__input" id="radio" type="radio" name="answermagazine" value=2>в
+            <label class="form__input_radio">
+                <input id="radio" type="radio" name="answermagazine" value=2>в
                 журнале
             </label>
-            <label class="form__label-checkbox">
-                <input class="form__input" id="radio" type="radio" name="answerboth" value=3>на
-                сайте и
-                в журнале
-            </label>
+            <label class="form__input_radio">
+                <input id="radio" type="radio" name="answerboth" value=3>на
+                сайте и в журнале
 
+            </label>
+            </label>
         </div>
 
         <div class="form__input-wrapper">
             <label class="form__label form__label_inline" for="comment">Разрешить комментарии: </label>
-            <input class="form__input" id="comment" type="checkbox" name="comment" value="yes">
+
+            <input id="comment" type="checkbox" name="comment" value="yes">
         </div>
 
         <div class="form__input-wrapper">
             <label class="form__label" for="answer">Текст статьи: </label>
             <br>
-            <textarea class="form__input form__input_textarea" id="answer" name="answertext">
+            <textarea class="form__input_textarea" id="answer" name="answertext">
             </textarea>
         </div>
 

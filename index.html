@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <link rel="icon" href="bll.png" type="image/png">
+    <title>MAKET</title>
+</head>
+
+<body>
+    <style>
+        * {
+            transition-duration: 2s
+        }
+
+        .cap {
+            display: block;
+            background-color: #ADD8E6;
+            color: #0000FF;
+            font-size: 30px;
+            text-transform: uppercase;
+            line-height: 85px;
+            text-align: center;
+        }
+
+        .divone {
+            border: none 1px;
+            background: url('yel.png') left repeat-y, url('bll.png') right repeat-y;
+        }
+
+        .divtwo {
+            border: none 1px;
+            padding: 10px;
+            float: left;
+        }
+
+        b {
+            font-size: 1.1em;
+        }
+
+        ul {
+            font-size: 1em;
+            padding-left: 20px;
+        }
+
+        .divthree {
+            border: none 1px;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .divfour {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        img {
+            display: inline-block;
+            float: left;
+            margin: 0 20px 10px 0;
+        }
+
+        .divfive {
+            font-size: 1.1em;
+        }
+
+        .vclub {
+            border: solid 1px;
+            background-color: MediumSpringGreen;
+            text-align: center;
+            color: BlueViolet;
+            padding: 15px;
+            width: 100px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            position: fixed;
+            right: 70px;
+            top: 20px;
+        }
+
+        @media all and (max-width: 480px) {
+            .cap {
+                display: none;
+            }
+
+            .divone {
+                background: none;
+            }
+
+            .divtwo {
+                background: url('yel.png');
+                text-align: center;
+                padding: 7px
+            }
+
+            b {
+                font-size: 1.3em;
+                margin: 5px;
+            }
+
+            ul {
+                padding: 1px;
+            }
+
+            li {
+                border: solid white 2px;
+                padding: 4px;
+                margin: 4px 2px;
+                border-radius: 5px;
+                display: inline-block;
+                font-size: 0.8em;
+            }
+
+            .divthree {
+                padding-top: 3px;
+            }
+
+            img {
+                width: 100%;
+                display: inline-block;
+                margin: 5px auto 15px auto;
+            }
+        }
+
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            .cap {
+                display: none;
+            }
+
+            .divone {
+                border: none 1px;
+                background: url('yel.png') left repeat-y;
+            }
+
+            .divthree {
+                padding-top: 3px;
+            }
+
+            .divfour {
+                line-height: 50px;
+            }
+
+            img {
+                float: none;
+                width: 100%;
+                display: inline-block;
+                margin: 5px auto 15px auto;
+            }
+        }
+        }
+    </style>
+
+
+    <div class="divone">
+        <div class="cap"> Привет участникам соревнований!
+        </div>
+
+        <div class="divtwo">
+            <b> Виды спорта:</b>
+            <ul type="disc">
+                <li> <a href="https://www.championat.com/other/_skate.html"
+                        title="Чемпионат мира по конькобежному спорту">Конькобежный спорт</a></li>
+                <li> <a href="https://www.championat.com/biathlon/_biathlonworldcup.html"
+                        title="Чемпионат мира по биатлону">Биатлон</a></li>
+                <li> <a href="https://www.championat.com/stat/football/#2021-02-24"
+                        title="Чемпионат мира по футболу">Футбол</a></li>
+                <li> <a href="https://www.championat.com/articles/olympic/_archeryog/1.html"
+                        title="Чемпионат мира по стрельбе из лука">Стрельба из лука</a></li>
+                <li> <a href="https://www.championat.com/other/_athletic/tournament/537/match/30679/"
+                        title="Чемпионат мира по прыжкам в длину">Прыжки в длину</a></li>
+                <li> <a href="https://www.championat.com/other/_athletic/tournament/537/match/30665/"
+                        title="Чемпионат мира по прыжкам в высоту">Прыжки в высоту</a></li>
+            </ul>
+        </div>
+
+        <div class="vclub">
+            вступить в клуб
+        </div>
+
+
+        <div class="divthree">
+            <div class="divfour">Футбол</div>
+            <img src="photo.png" title="Фотография кубка">
+            <div class="divfive">
+                Футбол (от англ. foot &mdash; ступня, ball &mdash; мяч) &mdash; самый популярный командный вид спорта в
+                мире, целью в котором является забить мяч в ворота соперника большее число раз, чем это сделает команда
+                соперника в установленное время. Мяч в ворота можно забивать ногами или любыми другими частями тела
+                (кроме рук). <a href="http://ru.sport-wiki.org/vidy-sporta/futbol/" title="ru.sport-wiki.org">
+                    Источник</a><br> <br>
+                Футбольный матч состоит из двух таймов длительностью по 45 минут каждый. Между таймами предусмотрен 15
+                минутный перерыв на отдых, после которого команды меняются воротами. Это делается для того, чтобы
+                команды были в равных условиях. <br> <br>
+                Футбольную игру выигрывает команда, забившая большее количество голов в ворота соперника. Если команды
+                закончили матч с одинаковым счетом голов, то фиксируется ничья, или назначаются два дополнительных тайма
+                по 15 минут. <br> <br>
+                Если дополнительное время закончилось ничьей, то назначается серия послематчевых пенальти. <a
+                    href="http://ru.sport-wiki.org/vidy-sporta/futbol/" title="ru.sport-wiki.org"> Источник</a>
+            </div>
+        </div>
+
+        <div class="cap" style="clear: both">Главное &mdash; не победа, а участие!</div>
+
+</body>
+
+</html>

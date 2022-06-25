@@ -11,41 +11,71 @@
 
 <body>
     <style>
-        .content {
-            text-align: justify;
+        div {
+            border: none;
+            1px;
+            margin: 2px;
+            line-height: 25px;
         }
 
-        .content__images {
-            position: fixed;
+        .pics {
+            text-align: center;
+            position: relative;
+            width: 400px;
+            height: 350px;
+            margin: auto;
         }
 
-        .content__images-blue {
+        .picone {
             position: absolute;
-            left: 7cm;
-            top: 2cm;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
         }
 
-        .contecnt__images-people {
+        .pictwo {
             position: absolute;
-            left: 9cm;
-            top 6cm;
+            left: 200px;
+            top: 0px;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
         }
 
-        .contecnt__images-nosmoke {
+        .picthree {
             position: absolute;
-            left: 9cm;
-            top: 4cm
+            left: 100px;
+            top: 150px;
+            z-index: 1;
+            width: 200px;
+            height: 200px;
         }
 
-        .contecnt__images-YinYand {
+        .picfour {
             position: absolute;
-            left: 13cm;
-            top: 4cm
+            left: 100px;
+            top: 50px;
+            z-index: 2;
+            width: 200px;
+            height: 200px;
+        }
+
+        .picone:hover {
+            z-index: 3;
+        }
+
+        .pictwo:hover {
+            z-index: 3;
+        }
+
+        .picthree:hover {
+            z-index: 3;
         }
     </style>
 
-
-    <div class="content">
+    <div>
         Я к вам пишу &mdash; чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем
         наказать.
         Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
@@ -53,17 +83,23 @@
         моего стыда Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю рав В деревне
         нашей
         видеть Вас.
+    </div>
 
-        <div class="content__images">
-            <img src="images/biohazard.png" class="content__images content__images-blue">
-            <img src="images/Man-and-woman.png" class="content__images contecnt__images-people">
-            <img src="images/No_smoking.png" class="content__images contecnt__images-nosmoke">
-            <img src="images/Yin_and_Yang.png" class="content__images contecnt__images-YinYand">
-        </div>
+    <div class="pics">
+        <img src="images/biohazard.png" class="picone">
+        <img src="images/Man-and-woman.png" class="pictwo">
+        <br>
+        <img src="images/Yin_and_Yang.png" class="picthree">
+        <img src="images/No_smoking.png" class="picfour">
+    </div>
 
+    <div>
         Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до
         новой
         встречи.
+    </div>
+
+
     </div>
 
 

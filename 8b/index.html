@@ -10,9 +10,42 @@
 </head>
 
 <body>
+    <style>
+        .content {
+            text-align: justify;
+        }
+
+        .content__images {
+            position: fixed;
+        }
+
+        .content__images-blue {
+            position: absolute;
+            left: 7cm;
+            top: 2cm;
+        }
+
+        .contecnt__images-people {
+            position: absolute;
+            left: 9cm;
+            top 6cm;
+        }
+
+        .contecnt__images-nosmoke {
+            position: absolute;
+            left: 9cm;
+            top: 4cm
+        }
+
+        .contecnt__images-YinYand {
+            position: absolute;
+            left: 13cm;
+            top: 4cm
+        }
+    </style>
 
 
-    <div style="position:relative">
+    <div class="content">
         Я к вам пишу &mdash; чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня презреньем
         наказать.
         Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня.
@@ -21,10 +54,11 @@
         нашей
         видеть Вас.
 
-        <div style="width: 100%; height: 100%; position: absolute: left: 0; top: 0; display:inline-block">
-            <img src="images/biohazard.png" style="position: absolute; left: 6cm; top: 2cm">
-            <img src="images/Man-and-woman.png" style="position: absolute; left: 10cm; top: 2cm">
-            <img src="images/No_smoking.png" style="position: absolute; left: 8cm; top: 4cm">
+        <div class="content__images">
+            <img src="images/biohazard.png" class="content__images content__images-blue">
+            <img src="images/Man-and-woman.png" class="content__images contecnt__images-people">
+            <img src="images/No_smoking.png" class="content__images contecnt__images-nosmoke">
+            <img src="images/Yin_and_Yang.png" class="content__images contecnt__images-YinYand">
         </div>
 
         Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до
